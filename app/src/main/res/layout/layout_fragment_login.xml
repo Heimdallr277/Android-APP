@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/ll_login_root">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="30sp"
+        android:textColor="@color/colorTitleText"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorTitleText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_login_username"
+            android:hint="请输入用户名"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/colorTitleText"
+            android:textColorHint="@color/colorGrey"
+            android:background="@drawable/bg_et_selector"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm_"
+            android:lines="1"
+            android:maxLength="11"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_login_password"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/colorTitleText"
+            android:textColorHint="@color/colorGrey"
+            android:background="@drawable/bg_et_selector"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm_"
+            android:lines="1"
+            android:maxLength="11"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:background="@drawable/selector_btn"
+            android:id="@+id/btn_login"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="没有账号？点击注册"
+            android:background="@drawable/selector_btn"
+            android:id="@+id/btn_login_tosignup"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

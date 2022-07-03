@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.java.mashihe.NewsPageScrollingActivity">
+    <item
+        android:id="@+id/action_star"
+        android:orderInCategory="100"
+        android:title="收藏"
+        android:icon="@drawable/ic_star_border_grey_700_36dp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="分享"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_share_grey_800_36dp"/>
+</menu>

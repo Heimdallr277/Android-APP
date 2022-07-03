@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f1f1f</color>
+
+    <color name="colorPrimaryDark">#ffffff</color>
+
+    <color name="colorAccent">#a72b55</color>
+
+    <color name="colorWhite">#3b3b3b</color>
+
+    <color name="colorGrey">#909090</color>
+
+    <color name="colorGreyLight">#909090</color>
+
+    <color name="colorGreyDark">#ffffff</color>
+
+    <color name="colorGreen">#009900</color>
+
+    <color name="colorRed">#ff0033</color>
+
+    <color name="colorBlack">#ffffff</color>
+
+    <color name="colorTitleText">#ffffff</color>
+
+    <color name="colorNewsBg">#808080</color>
+
+</resources>

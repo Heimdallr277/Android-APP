@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BlockActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_keyboard_backspace_white_36dp"
+            android:id="@+id/iv_block_back"
+            android:background="@drawable/selector_icon"/>
+
+        <EditText
+            android:id="@+id/et_block_input"
+            android:layout_width="297dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_searchbox"
+            android:drawablePadding="5dp"
+            android:hint="请输入要屏蔽的关键词"
+            android:textColorHint="@color/colorTitleText"
+            android:maxLines="1"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorTitleText"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:imeOptions="actionGo"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_add_box_white_36dp"
+            android:id="@+id/iv_block_add"
+            android:background="@drawable/selector_icon"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="点击加号添加，长按选项删除"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_blockedlist">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/ll_news_entry">
+    <!--android:background="@drawable/selector_item">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:text="标题"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorGreyDark"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/txt_item_image"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_item_abstract"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="left"
+            android:textSize="14sp"
+            android:text="\t\t内容摘要：撒地方撒地方撒分公司的风格撒到噶水果撒撒大概撒个撒个撒过嘎嘎的观点是否感到十分感动但是否感到十分感动是否感到十分高但是否感到是古代诗歌"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textStyle="italic"
+            android:textColor="@color/colorGreyDark"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/txt_item_source"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="left"
+                android:textSize="12sp"
+                android:paddingLeft="5dp"
+                android:text="新浪新闻"
+                android:textColor="@color/colorGreyDark"/>
+
+            <TextView
+                android:id="@+id/txt_item_time"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:paddingRight="10dp"
+                android:text="2019-8-25"
+                android:textColor="@color/colorGreyDark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorNewsBg"/>
+
+</LinearLayout>

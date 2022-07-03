@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#60A764</color>
+    <!--<color name="colorPrimary_night">#3b3b3b</color>-->
+
+    <color name="colorPrimaryDark">#458748</color>
+    <!--<color name="colorPrimaryDark_night">#383838</color>-->
+
+    <color name="colorAccent">#D81B60</color>
+    <!--<color name="colorAccent_night">#a72b55</color>-->
+
+    <color name="colorWhite">#FFFFFF</color>
+    <!--<color name="colorWhite_night">#3b3b3b</color>-->
+
+    <color name="colorGrey">#e0e0e0</color>
+    <!--<color name="colorGrey_night">#909090</color>-->
+
+    <color name="colorGreyLight">#e0e0e0</color>
+    <!--<color name="colorGrey_night">#909090</color>-->
+
+    <color name="colorGreyDark">#909090</color>
+    <!--<color name="colorGreyDark_night">#e0e0e0</color>-->
+
+    <color name="colorGreen">#009900</color>
+    <!--<color name="colorGreen_night">#009900</color>-->
+
+    <color name="colorRed">#ff0033</color>
+    <!--<color name="colorRed_night">#ff0033</color>-->
+
+    <color name="colorBlack">#000000</color>
+    <!--<color name="colorBlack_night">#ffffff</color>-->
+
+    <color name="colorTitleText">#ffffff</color>
+
+    <color name="colorNewsBg">#efefef</color>
+
+
+</resources>

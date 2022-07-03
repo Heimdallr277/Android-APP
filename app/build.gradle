@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'key'
+            keyPassword 'android'
+            storeFile file('../key.jks')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId 'com.java.mashihe'
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.alibaba:fastjson:1.1.71.android'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.jwenfeng.pulltorefresh:library:1.2.7'
+    implementation 'com.astuetz:pagerslidingtabstrip:1.0.1'
+//    implementation "com.github.bumptech.glide:glide:4.9.0"
+//    implementation "com.android.support:support-fragment:26.1.0"
+    implementation 'com.billy.android:pre-loader:2.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:25.1.0'
+
+//
+//    implementation 'com.github.bumptech.glide:glide:4.5.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+////https图片处理
+//    implementation "com.github.bumptech.glide:okhttp3-integration:4.5.0"
+
+    //解决Glide找不到Android声明库问题
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+//    implementation 'com.github.bumptech.glide:okhttp3-integration:4.9.0'
+//    implementation 'com.android.support:support-annotations:28.0.0'
+//    annotationProcessor 'com.android.support:support-annotations:28.0.0'
+
+//    implementation 'com.sina.weibo.sdk:core:4.1.1:openDefaultRelease@aar'
+//    implementation files('libs/core-4.1.1-sources.jar')
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.3.1'
+}
+
+
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    appKey "2c507e6f60020"
+    appSecret "5da8bd6cb4db25e7be874ab5dc62b01e"
+    ShareSDK {
+        loopShare true
+        devInfo {
+            SinaWeibo {
+                appKey "2836489206"
+                appSecret "c44028fb458b41fe8f5bbdfde2ee3cd9"
+                callbackUri "http://www.sharesdk.cn"
+            }
+//            QQ {
+//                appId "100371282"
+//                appKey "aed9b0303e3ed1e27bae87c33761161d"
+//            }
+            Wechat {
+                appId "wxca87a9ccaf51d385"
+                appSecret "58cdcb3200bb948d5df799d8c5d23826"
+                userName "msh_er"
+                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 2
+            }
+            ShortMessage {}
+//            Douban {
+//                appKey "031a96a3aa8b28af094fc3eaffa17a0d"
+//                appSecret "2e675e730571b75d"
+//                callbackUri "http://mob.com"
+//            }
+//            Alipay {
+//                appId "2015072400185895"
+//            }
+            WechatMoments {
+                appId "wxca87a9ccaf51d385"
+                appSecret "58cdcb3200bb948d5df799d8c5d23826"
+            }
+            WechatFavorite {
+                appId "wxca87a9ccaf51d385"
+                appSecret "58cdcb3200bb948d5df799d8c5d23826"
+                enabled = "true"
+                bypassApproval = "true"
+            }
+            QQ {
+                appId "1109772951"
+                appKey "Xizy7g4rZzvkmDKA"
+                shareByAppClient true
+            }
+        }
+    }
+}
